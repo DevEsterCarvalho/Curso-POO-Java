@@ -10,5 +10,4 @@
         <maven.compiler.target>17</maven.compiler.target>
         <exec.mainClass>com.mycompany.aula02.Aula02</exec.mainClass>
     </properties>
-    <name>Aula03</name>
 </project>

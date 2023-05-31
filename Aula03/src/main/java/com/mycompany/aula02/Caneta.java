@@ -9,30 +9,30 @@ package com.mycompany.aula02;
  * @author ester
  */
 public class Caneta {
-    public String modelo;
-    public String cor;
-    private float ponta;
-    protected int carga;
-    private boolean tampada;
-    public void status (){
+    String modelo;
+    String cor;
+    float ponta;
+    int carga;
+    boolean tampada;
+    void status (){
         System.out.println("Modelo: " + this.modelo);
-        System.out.println("Uma caneta: " + this.cor);
+        System.out.println("Uma caneta " + this.cor);
         System.out.println("Ponta: " + this.ponta);
         System.out.println("Carga atual: " + this.carga);
         System.out.println("Está tampada? " + this.tampada);
     }
            
-    public void rabiscar (){
+    void rabiscar (){
         if (this.tampada == true){
             System.out.println("Não posso rabiscar");
         } else {
             System.out.println("Estou rabiscando");  
         }
     }
-    public void tampar (){
+    void tampar (){
         this.tampada = true;
     }
-    public void destampar (){
+    void destampar (){
         this.tampada = false;
     }
 }
