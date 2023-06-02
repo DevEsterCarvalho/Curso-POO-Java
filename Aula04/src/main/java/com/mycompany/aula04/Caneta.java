@@ -9,7 +9,7 @@ package com.mycompany.aula04;
  * @author ester
  */
 public class Caneta {
-   public String modelo;
+   private String modelo;
    private float ponta;
    
    public String getModelo(){
@@ -31,4 +31,3 @@ public class Caneta {
         
     }
    }
-}
