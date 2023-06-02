@@ -8,6 +8,9 @@ package com.mycompany.aula04;
  *
  * @author ester
  */
+
+// com ctrl + i (i= inserir código) inclui métodos 
+
 public class Caneta {
    private String modelo;
    private float ponta;
