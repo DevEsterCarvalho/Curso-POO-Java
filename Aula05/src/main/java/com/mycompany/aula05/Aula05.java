@@ -5,6 +5,7 @@
 
 package com.mycompany.aula05;
 
+
 /**
  *
  * @author ester
@@ -12,17 +13,23 @@ package com.mycompany.aula05;
 public class Aula05 {
 
     public static void main(String[] args) {
-        contaBanco c1 = new ContaBanco();
-        c1.numConta = 55555;
-        c1.tipo = "CC";
-        c1.dono = "Ester Carvalho";
-        c1.saldo = 1.500;
-        c1. status ;
-        c1.abrirConta();
-        c1.fecharConta();
-        c1.depositar();
-        c1.sacar();
-        c1.pagarMensal();
+        ContaBanco p1 = new ContaBanco();
+        p1.setNumConta (55555);
+        p1.setDono ("Ester");
+        p1.abrirConta("CC");
+       
+        ContaBanco p2 = new ContaBanco();
+        p2.setNumConta (77777);
+        p2.setDono ("Creuza");
+        p2.abrirConta("CP");
+        
+       p1.depositar(100);
+       p2.depositar(500);
+       p2.sacar(500); 
+       
+        p1.estadoAtual();
+        p2.estadoAtual();
+        
     }
-    }
+}
 
